@@ -9,7 +9,7 @@ def process_user_query(query_string):
         print(line)
         for word in line.split():
             print(word)
-            if word[0].isupper():
+            if word[].isupper():
                 words.append(word)
                 return (f'HI {word}!')
 
