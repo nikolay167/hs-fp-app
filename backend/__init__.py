@@ -7,8 +7,8 @@ def process_user_query(query_string):
     #return greetings
     for line in query_string:
         for word in line.split():
-            if word[].isupper():
+            if word[0].isupper():
                 return (words.append(word))
-                
+
 
     #return [f'HI{name}!' for name in query_string.split()]
