@@ -4,7 +4,7 @@ def process_user_query(query_string):
         words = []
         for word in line.split():
             if word[0].isupper():
-                return(words.append(word)
+                return(words.append(word))
 
 
 
