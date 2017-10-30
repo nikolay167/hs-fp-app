@@ -1,17 +1,15 @@
 #query_string='Alex went to the rest'
-#query_string='Alex is my Best Friend '
+#   query_string='Alex is my Best Friend '
 
 
 def process_user_query(query_string):
-    while True:
-        try :
+    try :
+        for word in query_string.split():
             words = ['Nikolay', 'Nishit', 'Alex', 'Catalina', 'Leo', 'OVER', 'the', 'Lazy', 'DOG']
-            for word in query_string.split():
-                for i in words:
-                    if word==i:
-                        return (f'Hi {word}')
-                    else:
-                        return('Sorry try again ')
+            for i in words:
+                if word==i:
+                    return (f'Hi {word}')
+                    
 
 
 
