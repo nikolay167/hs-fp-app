@@ -7,7 +7,7 @@ def process_user_query(query_string):
     #return greetings
     for line in query_string:
         for word in line.split():
-            if word[0].isupper():
+            if word.isupper():
                 return (words.append(word))
 
 
