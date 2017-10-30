@@ -2,8 +2,8 @@
 #query_string='Alex is my Best Friend '
 
 
-    def process_user_query(query_string):
-        while True:
+def process_user_query(query_string):
+    while True:
         try :
             words = ['Nikolay', 'Nishit', 'Alex', 'Catalina', 'Leo', 'OVER', 'the', 'Lazy', 'DOG']
             for word in query_string.split():
