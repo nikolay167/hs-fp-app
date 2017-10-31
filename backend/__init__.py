@@ -1,32 +1,16 @@
-#query_string='Alex went to the rest'
-#   query_string='Alex is my Best Friend '
-
-
+import re
 def process_user_query(query_string):
-    try :
-        for word in query_string.split():
-            words = ['Nikolay', 'Nishit', 'Alex', 'Catalina', 'Leo', 'OVER', 'the', 'Lazy', 'DOG']
-            for i in words:
-                if word==i:
-                    return (f'Hi {word}')
-                    
+    from urllib.request import urlopen
 
+    url = query_string
 
+# get a handler of a webpage located at the url.
+    f = urlopen(url)
 
-#def process_user_query(query_string):
+# read page contents
+    web_page_contents = f.read().decode('utf-8')
 
-        #for line in query_string:
-        #words = []
-        #for word in line.split():
-            #if word[0].upper():
-            #    return(words.append(word))
-            #    print(words)
-
-
-    #split_func=query_string.split()
-    #greetings=[i for i in split_func]
-    #return greetings
-
-
-
-    #return [f'HI{name}!' for name in query_string.split()]
+# gentleman's rule: if you opened something, and don’t need this any more, then close it!
+    f.close()
+    re.compile(r'href *= *"([^"]*)"').findall(web_page_contents)[:10]
+    return (re.compile)
