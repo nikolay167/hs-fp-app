@@ -12,6 +12,6 @@ def process_user_query(query_string):
 
 # gentleman's rule: if you opened something, and don’t need this any more, then close it!
     f.close()
-    word_apple_model = re.compile( r'<h2[^>]*>[A-Za-z]+ [A-Za-z]+</h2>' )
+    word_apple_model = re.compile( r'<h2 [^>]*>[A-Za-z]+ [A-Za-z]+</h2>' )
     Applist = word_apple_model.findall(web_page_contents)
     return Applist
