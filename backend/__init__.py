@@ -14,5 +14,5 @@ def process_user_query(query_string):
     f.close()
     word_apple_model = re.compile( r'<h2 class="as-bundleselection-modeltitle">\s*[A-Za-z]+ [A-Za-z]+\s*</h2>' )
     Applist = word_apple_model.findall(web_page_contents)
-    my_var=[]
+    my_var=''
     return my_var.append(Applist)
