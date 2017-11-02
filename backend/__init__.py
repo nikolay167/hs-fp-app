@@ -39,15 +39,19 @@ def process_user_query(query_string):
 
     Empty={}
     Empty1={}
+    empty3={}
 
 
-    # for i,specs in enumerate(clearing_from_span_Specs_section):
-    #      Empty[clearing_from_span_Computer_model[0] + specs] = clearing_from_span_price_section[i]
-    #
+    for i,specs in enumerate(clearing_from_span_Specs_section):
+         Empty[clearing_from_span_Computer_model[0] + specs] = clearing_from_span_price_section[i]
+
+
 
     for i1,specs1 in enumerate(clearing_from_span_Specs_section_edited):
 
          Empty1[clearing_from_span_Computer_model[0] + specs1] = clearing_from_span_price_section[1]
+
+    z = Empty1.update(Empty)
     return Empty1
 
 
