@@ -14,7 +14,7 @@ def process_user_query(query_string):
     f.close()
     word_apple_Computer_Model = re.compile( r'<h2 class="as-bundleselection-modeltitle">\s*[A-Za-z]+ [A-Za-z]+\s*</h2>' )
     word_apple_model_Specs = re.compile( r' <h3 class="as-macbundle-modelvariationtitle">[1-9-A-Za-z]+ [a-z]+ [A-Za-z]+ [A-Z]+</h3>' )
-    word_apple_Computer_price = re.compile( r'<span>\s*[$]\S*\s*</span>' )
+    word_apple_Computer_price = re.compile( r'<span>\s*[$1-9,1-9]*\s*</span>' )
 
     Applist_model = word_apple_model.findall(web_page_contents)
     Applis_Specs = word_apple_model_Specs.findall(web_page_contents)
