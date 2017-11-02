@@ -1,5 +1,4 @@
 import re
-import numpy as np
 def process_user_query(query_string):
     from urllib.request import urlopen
 
