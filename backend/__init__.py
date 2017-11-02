@@ -16,10 +16,10 @@ def process_user_query(query_string):
     word_apple_model_Specs = re.compile( r' <h3 class="as-macbundle-modelvariationtitle">[1-9-A-Za-z]+ [a-z]+ [A-Za-z]+ [A-Z]+</h3>' )
     word_apple_Computer_price = re.compile( r'<span>\s*\$[1-9],[1-9]*[.0-9]*\s*</span>' )
 
-    Applist_model = word_apple_model.findall(web_page_contents)
-    Applis_Specs = word_apple_model_Specs.findall(web_page_contents)
+    #Applist_model = word_apple_model.findall(web_page_contents)
+    #Applis_Specs = word_apple_model_Specs.findall(web_page_contents)
     Applist_price = word_apple_Computer_price.findall(web_page_contents)
-    my_var={}
+    #my_var={}
     return Applist_price
 
     # for n,x,m in rang
